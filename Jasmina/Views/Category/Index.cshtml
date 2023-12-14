@@ -1,6 +1,19 @@
 ﻿@model List<Course>
 
-<h1>Course List</h1>
+<div class="container">
+    <div class="row pt-4 pb-23"">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Category List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="" asp-action="" class="btn btn-primary">
+                <i class="bi bi-journal-plus"></i>
+                Create a New Category
+            </a>
+        </div>
+    </div>
 
 <table class="table table-bordered table-striped">
     <thead>
@@ -31,3 +44,4 @@
         }
     </tbody>
 </table>
+</div>
