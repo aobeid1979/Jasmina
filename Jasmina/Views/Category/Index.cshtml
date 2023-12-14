@@ -1,0 +1,33 @@
+﻿@model List<Course>
+
+<h1>Course List</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>
+            couse Name
+        </th>
+        <th>
+            Display Order
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.OrderBy(u => u.DisplayOrder))
+        {
+            <tr>
+                <td>@obj.Title</td>
+                <td>
+                    @obj.DisplayOrder
+                </td>
+                <td>
+                    @obj.Description
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
